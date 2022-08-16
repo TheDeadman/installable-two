@@ -23,7 +23,7 @@
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "launch_handler": {
-    "route-to": "existing-client-navigate"
+    "route-to": "existing-client-retain"
   },
-  "capture_links": "existing-client-navigate"
+  "capture_links": "existing-client-retain"
 }
