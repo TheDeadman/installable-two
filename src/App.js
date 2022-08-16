@@ -16,7 +16,7 @@ function App() {
         <input type="text" value={hashTarget} onChange={(e) => setHashTarget(e.target.value)} />
         <a
           className="App-link"
-          href={`https://test-installable-two.herokuapp.com/${hashTarget ? "#" + hashTarget : ''}`}
+          href={`https://test-installable-one.herokuapp.com/${hashTarget ? "#" + hashTarget : ''}`}
           target="_blank"
         >
           GO TO APP ONE
