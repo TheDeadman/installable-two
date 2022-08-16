@@ -23,7 +23,6 @@
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "launch_handler": {
-    "route-to": "existing-client-retain"
-  },
-  "capture_links": "existing-client-retain"
+    "client-mode": "focus-existing"
+  }
 }
