@@ -9,9 +9,6 @@ function App() {
   const location = useLocation();
   useEffect(() => {
     setNow(Date.now());
-    // window.onbeforeunload = (e) => {
-    //   alert("Test")
-    // }
     window.name = "app-two"
   }, [])
   return (

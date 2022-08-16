@@ -22,7 +22,5 @@
   "display": "minimal-ui",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "launch_handler": {
-    "client-mode": "focus-existing"
-  }
+  "capture_links": "existing-client-event"
 }
