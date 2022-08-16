@@ -22,6 +22,8 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "launch_handler": "existing-client-navigate",
+  "launch_handler": {
+    "route-to": "existing-client-navigate"
+  },
   "capture_links": "existing-client-navigate"
 }
