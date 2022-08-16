@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Installable Two",
+  "name": "Installable App Two",
   "icons": [
     {
       "src": "favicon.ico",
