@@ -38,21 +38,21 @@ function App() {
         </a> */}
         <a
           className="App-link"
-          href={`test-handler://${hashTarget ? hashTarget : 'test'}`}
+          href={`web+test-handler://${hashTarget ? hashTarget : 'test'}`}
           target="app-one"
         >
           GO TO APP ONE
         </a>
         <a
           className="App-link"
-          href={`test-handlera-2://${hashTarget ? hashTarget : 'test'}`}
+          href={`web+test-handler-2://${hashTarget ? hashTarget : 'test'}`}
           target="app-one"
         >
           GO TO APP ONE
         </a>
         <a
           className="App-link"
-          href={`test-handler-3://${hashTarget ? hashTarget : 'test'}`}
+          href={`web+test-handler-3://${hashTarget ? hashTarget : 'test'}`}
           target="app-one"
         >
           GO TO APP ONE
