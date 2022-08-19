@@ -23,7 +23,7 @@ function App() {
         <input type="text" value={hashTarget} onChange={(e) => setHashTarget(e.target.value)} />
         <a
           className="App-link"
-          href={`https://test-installable-one.herokuapp.com${hashTarget ? "#" + hashTarget : ''}`}
+          href={`https://test-installable-one.herokuapp.com/receive-shares${hashTarget ? "#" + hashTarget : ''}`}
           target="app-one"
         >
           GO TO APP ONE
@@ -31,7 +31,7 @@ function App() {
 
         <a
           className="App-link"
-          href={`https://test-installable-one.herokuapp.com/${hashTarget ? "#" + hashTarget : ''}`}
+          href={`https://test-installable-one.herokuapp.com/receive-shares/${hashTarget ? "#" + hashTarget : ''}`}
           target="app-one"
         >
           GO TO APP ONE with /
