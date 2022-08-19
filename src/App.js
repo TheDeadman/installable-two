@@ -21,19 +21,41 @@ function App() {
           Time: {new Date(time).toString()}
         </p>
         <input type="text" value={hashTarget} onChange={(e) => setHashTarget(e.target.value)} />
-        <a
+        {/* <a
           className="App-link"
           href={`https://test-installable-one.herokuapp.com${hashTarget ? "#" + hashTarget : ''}`}
           target="app-one"
         >
           GO TO APP ONE
         </a>
+        
         <a
           className="App-link"
           href={`https://test-installable-one.herokuapp.com/${hashTarget ? "#" + hashTarget : ''}`}
           target="app-one"
         >
           GO TO APP ONE with /
+        </a> */}
+        <a
+          className="App-link"
+          href={`test-handler://${hashTarget ? hashTarget : 'test'}`}
+          target="app-one"
+        >
+          GO TO APP ONE
+        </a>
+        <a
+          className="App-link"
+          href={`test-handlera-2://${hashTarget ? hashTarget : 'test'}`}
+          target="app-one"
+        >
+          GO TO APP ONE
+        </a>
+        <a
+          className="App-link"
+          href={`test-handler-3://${hashTarget ? hashTarget : 'test'}`}
+          target="app-one"
+        >
+          GO TO APP ONE
         </a>
       </header>
     </div>
