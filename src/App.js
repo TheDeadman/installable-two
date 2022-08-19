@@ -38,7 +38,7 @@ function App() {
         </a> */}
         <a
           className="App-link"
-          href={`web+test-handler://${hashTarget ? hashTarget : 'test'}`}
+          href={`web+testhandler://${hashTarget ? hashTarget : 'test'}`}
           target="app-one"
         >
           GO TO APP ONE
