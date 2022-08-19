@@ -8,7 +8,6 @@ function App() {
   const [hashTarget, setHashTarget] = useState('')
   const location = useLocation();
   useEffect(() => {
-    setNow(Date.now());
     window.name = "app-two"
   }, [])
   return (
