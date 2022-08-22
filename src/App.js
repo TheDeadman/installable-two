@@ -3,6 +3,13 @@ import { useLocation } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
+function getLink() {
+  if (window.location.hostname === "localhost") {
+    return "http://localhost:3001"
+  }
+  return "https://test-installable-one.herokuapp.com";
+}
+
 function App() {
   const [time, setTime] = useState(Date.now())
   const [hashTarget, setHashTarget] = useState('')
@@ -23,7 +30,14 @@ function App() {
         <input type="text" value={hashTarget} onChange={(e) => setHashTarget(e.target.value)} />
         <a
           className="App-link"
-          href={`https://test-installable-one.herokuapp.com/receive-shares${hashTarget ? "#" + hashTarget : ''}`}
+          href={`${getLink()}`}
+          target="app-one"
+        >
+          GO TO APP ONE ROOT
+        </a>
+        <a
+          className="App-link"
+          href={`${getLink()}/receive-shares${hashTarget ? "#" + hashTarget : ''}`}
           target="app-one"
         >
           GO TO APP ONE
@@ -31,7 +45,7 @@ function App() {
 
         <a
           className="App-link"
-          href={`https://test-installable-one.herokuapp.com/receive-shares/${hashTarget ? "#" + hashTarget : ''}`}
+          href={`${getLink()}/receive-shares/${hashTarget ? "#" + hashTarget : ''}`}
           target="app-one"
         >
           GO TO APP ONE with /
