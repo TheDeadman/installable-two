@@ -24,7 +24,7 @@
   "background_color": "#ffffff",
   "capture_links": "existing-client-event",
   "share_target": {
-    "action": "/share-target/",
+    "action": "/index.html",
     "method": "GET",
     "params": {
       "title": "title",
