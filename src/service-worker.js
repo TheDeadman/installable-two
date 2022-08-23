@@ -25,11 +25,14 @@ self.skipWaiting();
 precacheAndRoute(self.__WB_MANIFEST);
 
 self.addEventListener('fetch', (e) => {
-  if ((e.request.url.endsWith('/receive-shares')) &&
-    (e.request.method === 'POST')) {
+  console.log("In fetch listener 1", e);
+  if ((e.request.url.endsWith('/receive-shares')) && (e.request.method === 'POST')) {
+    console.log("In fetch listener 2");
     return e.respondWith((async () => {
       // This function is async.
+      console.log("In fetch listener 3")
       const formData = await e.request.formData();
+      console.log("In fetch listener 3", formData);
       // Do something with the URL…
       const url = formData.get('url');
       // Store the URL, process it, communicate it to the clients…
