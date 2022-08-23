@@ -51,7 +51,7 @@ function App() {
           GO TO APP ONE with /
         </a>
         <button onClick={() => {
-          navigator.share({ 'x-title': "test", 'share-title': "Title", 'z-url': "http://web.dev" });
+          navigator.share({ 'xText': "test", 'shareTitle': "Title", 'zUrl': "http://web.dev" });
         }}>Share</button>
         {/* <a
           className="App-link"
