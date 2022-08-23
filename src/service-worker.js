@@ -24,6 +24,23 @@ self.skipWaiting();
 // const manifest = self.__WB_MANIFEST
 precacheAndRoute(self.__WB_MANIFEST);
 
+self.addEventListener('fetch', (e) => {
+  if ((e.request.url.endsWith('/receive-shares')) &&
+    (e.request.method === 'POST')) {
+    return e.respondWith((async () => {
+      // This function is async.
+      const formData = await e.request.formData();
+      // Do something with the URL…
+      const url = formData.get('url');
+      // Store the URL, process it, communicate it to the clients…
+      // You need to redirect the user somewhere, since the path
+      // /receive-shares does not actually exist.
+      return Response.redirect('/', 303);
+    })())
+  }
+  /* Your regular fetch handler */
+})
+
 // Set up App Shell-style routing, so that all navigation requests
 // are fulfilled with your index.html shell. Learn more at
 // https://developers.google.com/web/fundamentals/architecture/app-shell
